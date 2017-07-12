@@ -1,6 +1,6 @@
 {
   "name": "socket.io",
-  "version": "1.0.0",
+  "version": "2.0.3",
   "description": "node.js realtime framework server",
   "keywords": [
     "realtime",
@@ -11,21 +11,39 @@
     "socket",
     "io"
   ],
+  "main": "./lib/index",
+  "files": [
+    "lib/"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/socketio/socket.io"
+  },
   "scripts": {
-    "test": "make test"
+    "test": "gulp test"
   },
   "dependencies": {
-    "engine.io": "LearnBoost/engine.io#f071471",
-    "socket.io-parser": "2.0.0",
-    "socket.io-client": "LearnBoost/socket.io-client#c7ac415",
-    "has-binary-data": "0.1.0",
-    "debug": "0.7.4"
+    "debug": "~2.6.6",
+    "engine.io": "~3.1.0",
+    "object-assign": "~4.1.1",
+    "socket.io-adapter": "~1.1.0",
+    "socket.io-client": "~2.0.2",
+    "socket.io-parser": "~3.1.1"
   },
   "devDependencies": {
-    "mocha": "*",
-    "expect.js": "*",
-    "supertest": "*",
-    "istanbul": "0.2.3"
+    "babel-preset-es2015": "^6.24.1",
+    "del": "^2.2.2",
+    "expect.js": "0.3.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-istanbul": "^1.1.1",
+    "gulp-mocha": "^4.3.1",
+    "gulp-task-listing": "1.0.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.3.0",
+    "superagent": "1.6.1",
+    "supertest": "1.1.0"
   },
   "contributors": [
     {
